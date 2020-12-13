@@ -850,6 +850,10 @@ func (c *Client) sendPost(jReq *jsonRequest) {
 	}
 	httpReq.Close = true
 	httpReq.Header.Set("Content-Type", "application/json")
+<<<<<<< HEAD
+=======
+	for key, value := range c.config.ExtraHeaders {
+>>>>>>> 610bb55ae85ccbc73958f44df1fba0ba888559ce
 		httpReq.Header.Set(key, value)
 	}
 
